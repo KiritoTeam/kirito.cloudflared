@@ -106,7 +106,7 @@ async ping(ping) {
 async chat(ve, ii, p) {
     try {
       const v = ve || "v1"
-      const i = ii || "gpt"
+      const i = ii || "gpt-3"
       
       if (!v) {
           throw new Error("Você Deve Informar a versão");
