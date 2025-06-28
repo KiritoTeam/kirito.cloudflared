@@ -1,38 +1,26 @@
-Para instalar a kirito.db.remote na sua aplicação basta utilizar 
+Para instalar a kiritoapi na sua aplicação basta utilizar 
 
-```npm i kirito.db.remote```
+```npm i kiritoapi```
 
 No console.
 
-# Rotas da database
+# Rotas da KiritoApi
 
 ```js
-const KiritoDB = require("kirito.db.remote")
-const db = new KiritoDB("database") //coloque sua key secret sem uma key secret não e possível utilizar a database
+const KiritoApi = require("kirito.api")
+const api = new KiritoApi()
 
-//Get na Db
-db.get(`Testeteetet.djdndj`).then((response) => {
-console.log(response)
-})
+//Minecraft Info
+api.mineinfo("mc.sparklypower.net")
 
-//add na Db
-db.add(`Teste.testeeee`, `90`)
+//Minecraft Banner
+api.minebanner("mc.sparklypower.net")
 
-//sub na db
-db.sub(`Teste.trste`, `5`)
+//Discord UserInfo
+api.userinfo("820344895528632380")
 
-
-//set na db
-db.set(`Teste.trste`, `10`)
-
-//delete na db
-db.delete(`Teste.trste`)
-
-
-// pegar todos os dados da db
-db.all().then((response) => {
-console.log(response)
-})
+//ChatGpt
+api.chat("oii")
 ```
 
 Agradecemos por utilizar nossa package.
