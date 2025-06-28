@@ -14,7 +14,7 @@ class KiritoApi {
 
   //Métodos da class do KiritoDB
 
-async ping( ping ) {
+async ping(ping) {
     try {
       
       
@@ -29,7 +29,7 @@ async ping( ping ) {
 
 
  
-  async mineinfo( ve, i ) {
+  async mineinfo(ve, i) {
     try {
       const v = ve || "v1"
       
@@ -54,7 +54,7 @@ async ping( ping ) {
   
   
   
-  async minebanner( ve, i ) {
+  async minebanner(ve, i) {
     try {
       const v = ve || "v1"
       
@@ -79,9 +79,9 @@ async ping( ping ) {
   
   
   
-  async dcinfo( ve, i ) {
+  async userinfo(ve, i) {
     try {
-      const v = ve || "v1"
+      const v = ve || "v5"
       
       if (!v) {
           throw new Error("Você Deve Informar a versão");
@@ -103,7 +103,7 @@ async ping( ping ) {
      
   
   
-async chat( ve, ii, p ) {
+async chat(ve, ii, p) {
     try {
       const v = ve || "v1"
       const i = ii || "gpt"
@@ -135,3 +135,12 @@ async chat( ve, ii, p ) {
 
 
 module.exports = KiritoApi;
+
+
+process.on("uncaughtException", (err) => {
+  console.log("Exceção não capturada: " + err);
+});
+
+process.on("unhandledRejection", (reason, promise) => {
+  console.log("[GRAVE] Rejeição possivelmente não tratada em: Promise ", promise, " motivo: ", reason.message);
+});
