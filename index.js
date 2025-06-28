@@ -1,5 +1,5 @@
 client = require("./index");
-const Urlbase = "https://api.kiritoapi.shop"
+const Urlbase = "https://proxy-kiritoapi.netlify.app/.netlify/functions/api"
 
 // Script by CroneGamesPlays Developer, NeoKurai Studios $ Adss Group Corporation © 2020 - 2024 × Todos os direitos reservados.
 
