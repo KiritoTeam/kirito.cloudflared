@@ -24,3 +24,6 @@ api.chat("oii")
 ```
 
 Agradecemos por utilizar nossa package.
+
+
+Script by https://github.com/shindozk
