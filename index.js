@@ -2,7 +2,7 @@ client = require("./index");
 client.config = require("./config");
 const Urlbase = "https://kiritodb-proxy.netlify.app/.netlify/functions/api"
 
-// Script by CroneGamesPlays Developer, NeoKurai Studios $ Adss Group Corporation © 2020 - 2024 × Todos os direitos reservados.
+// Script by CroneGamesPlays Developer, NeoKurai Studios $ Ads s Group Corporation © 2020 - 2024 × Todos os direitos reservados.
 
 const axios = require('axios');
 //const fetch = require("node-fetch");
@@ -26,7 +26,7 @@ class KiritoDB {
         throw new Error("Você Deve Informar O Valor Que Será Salvo");
       }
 
-      const api = await axios.get(`${Urlbase}/api/v1/db/add?id=${this.requiredString}&rota=${rota}&${valor}`, {
+      const api = await axios.get(`${Urlbase}/api/v1/db/add?id=${this.requiredString}&rota=${rota}&valor=${valor}`, {
         headers: {
           id: `${this.requiredString}`,
           rota: `${rota}`,
@@ -68,7 +68,7 @@ class KiritoDB {
         throw new Error("Você Deve Informar O Valor Que Será Salvo");
       }
 
-      const api = await axios.get(`${Urlbase}/api/v1/db/sub?id=${this.requiredString}&rota=${rota}&${valor}`, {
+      const api = await axios.get(`${Urlbase}/api/v1/db/sub?id=${this.requiredString}&rota=${rota}&valor=${valor}`, {
         headers: {
           id: `${this.requiredString}`,
           rota: `${rota}`,
@@ -110,7 +110,7 @@ class KiritoDB {
         throw new Error("Você Deve Informar O Valor Que Será Salvo");
       }
 
-      const api = await axios.get(`${Urlbase}/api/v1/db/set?id=${this.requiredString}&rota=${rota}&${valor}`, {
+      const api = await axios.get(`${Urlbase}/api/v1/db/set?id=${this.requiredString}&rota=${rota}&valor=${valor}`, {
         headers: {
           id: `${this.requiredString}`,
           rota: `${rota}`,
@@ -141,7 +141,7 @@ class KiritoDB {
 
 module.exports = KiritoDB;
 
-//require("./update");
+require("./update");
 
 
 process.on("uncaughtException", (err) => {
