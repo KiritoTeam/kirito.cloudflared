@@ -14,7 +14,7 @@ class KiritoApi {
 
   //Métodos da class do KiritoDB
 
-async ping({ ping }) {
+async ping( ping ) {
     try {
       
       
@@ -29,9 +29,9 @@ async ping({ ping }) {
 
 
  
-  async mineinfo({ v, i }) {
+  async mineinfo( ve, i ) {
     try {
-      
+      const v = ve || "v1"
       
       if (!v) {
           throw new Error("Você Deve Informar a versão");
@@ -54,9 +54,9 @@ async ping({ ping }) {
   
   
   
-  async minebanner({ v, i }) {
+  async minebanner( ve, i ) {
     try {
-      
+      const v = ve || "v1"
       
       if (!v) {
           throw new Error("Você Deve Informar a versão");
@@ -79,9 +79,9 @@ async ping({ ping }) {
   
   
   
-  async dcinfo({ v, i }) {
+  async dcinfo( ve, i ) {
     try {
-      
+      const v = ve || "v1"
       
       if (!v) {
           throw new Error("Você Deve Informar a versão");
@@ -103,9 +103,10 @@ async ping({ ping }) {
      
   
   
-async chat({ v, i, p }) {
+async chat( ve, ii, p ) {
     try {
-      
+      const v = ve || "v1"
+      const i = ii || "gpt"
       
       if (!v) {
           throw new Error("Você Deve Informar a versão");
