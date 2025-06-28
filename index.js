@@ -29,7 +29,7 @@ async ping(ping) {
 
 
  
-  async mineinfo(ve, i) {
+  async mineinfo(i, ve) {
     try {
       const v = ve || "v1"
       
@@ -37,7 +37,7 @@ async ping(ping) {
           throw new Error("Você Deve Informar a versão");
       };
       if (!i) {
-          throw new Error("Você Deve Informar O ip");
+          throw new Error("Você Deve Informar O ip do servidor");
       };
       
       const api = await axios.get(`${Urlbase}/api/${v}/mine/server/${i}`)
@@ -54,7 +54,7 @@ async ping(ping) {
   
   
   
-  async minebanner(ve, i) {
+  async minebanner(i, ve) {
     try {
       const v = ve || "v1"
       
@@ -62,7 +62,7 @@ async ping(ping) {
           throw new Error("Você Deve Informar a versão");
       };
       if (!i) {
-          throw new Error("Você Deve Informar O ip");
+          throw new Error("Você Deve Informar O Ip Do Servidor");
       };
       
       const api = await axios.get(`${Urlbase}/api/${v}/mine/server/banner/${i}`)
@@ -79,7 +79,7 @@ async ping(ping) {
   
   
   
-  async userinfo(ve, i) {
+  async userinfo(i, ve) {
     try {
       const v = ve || "v5"
       
@@ -87,7 +87,7 @@ async ping(ping) {
           throw new Error("Você Deve Informar a versão");
       };
       if (!i) {
-          throw new Error("Você Deve Informar O ip");
+          throw new Error("Você Deve Informar O Id Do Usuário");
       };
       
       const api = await axios.get(`${Urlbase}/api/${v}/discord/user/${i}`)
@@ -103,7 +103,7 @@ async ping(ping) {
      
   
   
-async chat(ve, ii, p) {
+async chat(p, ve, ii) {
     try {
       const v = ve || "v1"
       const i = ii || "gpt-3"
