@@ -22,6 +22,9 @@ api.userinfo("820344895528632380")
 //Discord SetBanner
 api.setBannerBot("Client-Token", "Link do Banner")
 
+//Discord Invite Info
+api.inviteInfo("Link de um Servidor")
+
 //ChatGpt
 api.chat("oii")
 ```
