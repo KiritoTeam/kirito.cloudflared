@@ -12,7 +12,7 @@ class KiritoApi {
     // Você pode inicializar instâncias aqui, se necessário
   }
 
-  //Métodos da class do KiritoDB
+  //Métodos da class do KiritoAPI
 
 async ping(ping) {
     try {
@@ -151,6 +151,30 @@ async chat(p, ve, ii) {
     throw new Error("Erro: "+ error.message)   
     }
   };
+
+
+
+  async inviteInfo(l, ve) {
+    try {
+      const v = ve || "v1"
+      
+      if (!v) {
+          throw new Error("Você Deve Informar a versão");
+      };
+      if (!l) {
+          throw new Error("Você Deve Informar O Link Do Servidor");
+      };
+      
+      const api = await axios.get(`${Urlbase}/api/${v}/discord/invite?link=${l}`)
+      
+      return api.data;
+      
+    } catch(error){
+    throw new Error("Erro: "+ error.message)   
+    }
+  };
+
+    
  
   
   
