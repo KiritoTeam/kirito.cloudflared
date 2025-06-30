@@ -174,6 +174,48 @@ async chat(p, ve, ii) {
     }
   };
 
+
+ async GithubUserinfo(i, ve) {
+    try {
+      const v = ve || "v1"
+      
+      if (!v) {
+          throw new Error("Você Deve Informar a versão");
+      };
+      if (!i) {
+          throw new Error("Você Deve Informar O Nome Do Usuário");
+      };
+      
+      const api = await axios.get(`${Urlbase}/api/${v}/github/user/${i}`)
+      
+      return api.data;
+      
+    } catch(error){
+    throw new Error("Erro: "+ error.message)   
+    }
+  };
+
+
+ async youtubeinfo(i, ve) {
+    try {
+      const v = ve || "v1"
+      
+      if (!v) {
+          throw new Error("Você Deve Informar a versão");
+      };
+      if (!i) {
+          throw new Error("Você Deve Informar O Nome Do Usuário");
+      };
+      
+      const api = await axios.get(`${Urlbase}/api/${v}/youtube/infos/${i}`)
+      
+      return api.data;
+      
+    } catch(error){
+    throw new Error("Erro: "+ error.message)   
+    }
+  };
+
     
  
   
