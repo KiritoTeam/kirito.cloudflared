@@ -67,7 +67,7 @@ async ping(ping) {
       
       const api = await axios.get(`${Urlbase}/api/${v}/mine/server/banner/${i}`)
       
-      return api.data;
+      return api.data.banner;
       
     } catch(error){
     throw new Error("Erro: "+ error.message)   
@@ -126,7 +126,31 @@ async chat(p, ve, ii) {
     throw new Error("Erro: "+ error.message)   
     }
   };
-  
+
+          
+  async setBannerBot(t, l, ve) {
+    try {
+      const v = ve || "v1"
+      
+      if (!v) {
+          throw new Error("Você Deve Informar a versão");
+      };
+      if (!t) {
+          throw new Error("Você Deve Informar o Token Do Bot a Qual Deseja Mudar o Banner");
+      };
+      if (!l) {
+          throw new Error("Você Deve Informar o Link Do Banner");
+      };
+        
+      
+      const api = await axios.get(`${Urlbase}/api/${v}/discord/banner?token=${t}&link=${l}`)
+      
+      return api.data;
+      
+    } catch(error){
+    throw new Error("Erro: "+ error.message)   
+    }
+  };
  
   
   
