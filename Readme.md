@@ -27,6 +27,12 @@ api.inviteInfo("Link de um Servidor")
 
 //ChatGpt
 api.chat("oii")
+
+//GitHub UserInfo
+api.GithubUserinfo("Nome do Github")
+
+//YouTube CanalInfo
+api.youtubeInfo("Nome do Canal")
 ```
 
 Agradecemos por utilizar nossa package.
