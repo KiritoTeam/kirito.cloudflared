@@ -1,11 +1,10 @@
-
 const axios = require("axios");
 const semver = require("semver"); // Para comparar as versões
 const packageVersion = require("./package.json").version;
 
 async function checkForUpdates() {
   try {
-    const response = await axios.get("https://registry.npmjs.com/kirito.db.remote");
+    const response = await axios.get("https://registry.npmjs.com/kiritoapi");
     const latestVersion = response.data["dist-tags"].latest;
 
     if (semver.gt(latestVersion, packageVersion)) {
