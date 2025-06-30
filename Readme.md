@@ -19,6 +19,9 @@ api.minebanner("mc.sparklypower.net")
 //Discord UserInfo
 api.userinfo("820344895528632380")
 
+//Discord SetBanner
+api.setBannerBot("Client-Token", "Link do Banner")
+
 //ChatGpt
 api.chat("oii")
 ```
@@ -26,4 +29,4 @@ api.chat("oii")
 Agradecemos por utilizar nossa package.
 
 
-Script by https://github.com/shindozk
+Base Feita Pelo: https://github.com/shindozk
