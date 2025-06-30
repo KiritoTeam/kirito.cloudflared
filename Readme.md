@@ -7,7 +7,7 @@ No console.
 # Rotas da KiritoApi
 
 ```js
-const KiritoApi = require("kirito.api")
+const KiritoApi = require("kiritoapi")
 const api = new KiritoApi()
 
 //Minecraft Info
