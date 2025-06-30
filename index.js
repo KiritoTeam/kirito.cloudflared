@@ -196,7 +196,7 @@ async chat(p, ve, ii) {
   };
 
 
- async youtubeinfo(i, ve) {
+ async youtubeInfo(i, ve) {
     try {
       const v = ve || "v1"
       
