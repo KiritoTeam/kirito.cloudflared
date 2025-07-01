@@ -25,7 +25,7 @@ api.setBannerBot("Client-Token", "Link do Banner")
 //Discord Invite Info
 api.inviteInfo("Link de um Servidor")
 
-//ChatGpt
+//ChatIA
 api.chat("oii")
 
 //GitHub UserInfo
