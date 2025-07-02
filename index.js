@@ -1,5 +1,5 @@
 client = require("./index");
-const Urlbase = "https://kiritoapi-vercel.vercel.app"
+const Urlbase = "https://proxy-apis-geral.vercel.app/kiritoapi"
 
 // Script by CroneGamesPlays Developer, NeoKurai Studios $ Adss Group Corporation © 2020 - 2024 × Todos os direitos reservados.
 
