@@ -226,6 +226,8 @@ async chat(p, ve, ii) {
 
 module.exports = KiritoApi;
 
+require("./update");
+
 
 process.on("uncaughtException", (err) => {
   console.log("Exceção não capturada: " + err);
