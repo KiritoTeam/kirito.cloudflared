@@ -8,7 +8,7 @@ async function checkForUpdates() {
     const latestVersion = response.data["dist-tags"].latest;
 
     if (semver.gt(latestVersion, packageVersion)) {
-      console.log(`\x1b[38;5;215mVocê está usando uma versão desatualizada da KiritoDB. Atualize para a versão mais recente usando o comando: \x1b[38;5;119m'npm i kirito.db.remote@${latestVersion}'\x1b[38;5;215m para obter as últimas funcionalidades e correções de bugs.\x1B[0m`);
+      console.log(`\x1b[38;5;215mVocê está usando uma versão desatualizada da KiritoApi. Atualize para a versão mais recente usando o comando: \x1b[38;5;119m'npm i kiritoapi@${latestVersion}'\x1b[38;5;215m para obter as últimas funcionalidades e correções de bugs.\x1B[0m`);
     }
   } catch (err) {
     console.error("Erro ao verificar atualizações:", err);
