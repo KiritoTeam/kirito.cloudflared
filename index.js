@@ -1,5 +1,5 @@
 client = require("./index");
-const Urlbase = "https://proxy-apis-geral.vercel.app/kiritoapi"
+const Urlbase = "https://npm-kiritoapi.ecoguardiao.tech"
 
 // Script by CroneGamesPlays Developer, NeoKurai Studios $ Adss Group Corporation © 2020 - 2024 × Todos os direitos reservados.
 
