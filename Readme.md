@@ -1,38 +1,17 @@
-Para instalar a kiritoapi na sua aplicação basta utilizar 
+Para instalar a kirito.cloudflared na sua aplicação basta utilizar 
 
-```npm i kiritoapi```
+```npm i kirito.cloudflared```
 
 No console.
 
-# Rotas da KiritoApi
+# Rotas da kirito.cloudflared
 
 ```js
-const KiritoApi = require("kiritoapi")
-const api = new KiritoApi()
+const Server = require("kirito.cloudflared")
+const tunnel = new Server()
 
-//Minecraft Info
-api.mineinfo("mc.sparklypower.net")
-
-//Minecraft Banner
-api.minebanner("mc.sparklypower.net")
-
-//Discord UserInfo
-api.userinfo("820344895528632380")
-
-//Discord SetBanner
-api.setBannerBot("Client-Token", "Link do Banner")
-
-//Discord Invite Info
-api.inviteInfo("Link de um Servidor")
-
-//ChatIA
-api.chat("oii")
-
-//GitHub UserInfo
-api.GithubUserinfo("Nome do Github")
-
-//YouTube CanalInfo
-api.youtubeInfo("Nome do Canal")
+//Ligar o tunnel na porta 3000
+tunnel.start("3000")
 ```
 
 Agradecemos por utilizar nossa package.
